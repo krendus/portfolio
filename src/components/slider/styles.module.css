@@ -1,0 +1,15 @@
+.container {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container p {
+    width: 40%;
+}
+.slide {
+    width: 60%;
+    height: 4px;
+    background: #7c292a80;
+    border-radius: 10px;
+}

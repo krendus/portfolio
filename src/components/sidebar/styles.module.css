@@ -1,0 +1,133 @@
+.container {
+    width: 350px;
+    padding: 15px;
+    min-height: 100vh;
+    background: #7c292a1f;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+.profileImg {
+    height: 200px;
+    width: 170px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.profileImg span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: -180px;
+    background: linear-gradient(to right, transparent, #7C292A);
+    display: block;
+    height: 3px;
+    width: 100%;
+    animation: toright .5s linear;
+}
+.profileImg span:nth-child(2){
+    position: absolute;
+    right: 0;
+    top: -200px;
+    background: linear-gradient(to bottom, transparent, #7C292A);
+    display: block;
+    height: 100%;
+    width: 3px;
+    animation: tobottom .5s linear;
+    animation-delay: .5s;
+}
+.profileImg span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    right: -180px;
+    background: linear-gradient(to left, transparent, #7C292A);
+    display: block;
+    height: 3px;
+    width: 100%;
+    animation: toleft .5s linear;
+    animation-delay: 1s;
+}
+.profileImg span:nth-child(4){
+    position: absolute;
+    left: 0;
+    top: 200px;
+    background: linear-gradient(to top, transparent, #7C292A);
+    display: block;
+    height: 100%;
+    width: 3px;
+    animation: totop .5s linear;
+    animation-delay: 1.5s;
+}
+@keyframes toright {
+    from {
+        left: -180px;
+    }
+    to {
+        left: 0;
+    }
+}
+@keyframes tobottom {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 0;
+    }
+}
+@keyframes toleft {
+    from {
+        right: -180px;
+    }
+    to {
+        right: 0;
+    }
+}
+@keyframes totop {
+    from {
+        top: 200px;
+    }
+    to {
+        top: 0;
+    }
+}
+.profileImg img {
+    object-fit: cover;
+}
+.header {
+    font-size: 20px;
+    color: #7C292A;
+    margin-top: 15px;
+}
+.text {
+    font-size: 13px;
+    color: #222;
+}
+.header + div {
+    width: 100%;
+    height: 2px;
+    background: #7c292a80;
+    margin-bottom: 15px;
+}
+.header + div::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 35%;
+    background: #7C292A;
+}
+.button {
+    border: none;
+    display: flex;
+    border-radius: 9999px;
+    padding: 10px 15px;
+    border: 1px solid #7C292A;
+    background: transparent;
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #7C292A;
+    transition: .4s linear;
+}
+.button:hover {
+    background: #7C292A;
+    color: white;
+}
