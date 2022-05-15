@@ -6,6 +6,9 @@
 .rightContainer {
     width: 100%;
     padding: 0 20px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 20px;
 }
 .name {
     font-size: 35px;
@@ -38,4 +41,10 @@
     height: 100%;
     width: 15%;
     background: #7C292A;
+}
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #7c292a;
 }

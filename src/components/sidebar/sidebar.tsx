@@ -25,8 +25,10 @@ const Sidebar = () => {
         <div></div>
         <div>
           <Slider name="JavaScript" percent={90} />
+          <Slider name="TypeScript" percent={80} />
           <Slider name="React" percent={85} />
           <Slider name="CSS" percent={95} />
+          <Slider name="Web3.js" percent={70} />
           <Slider name="NodeJS" percent={50} />
           <Slider name="Solidity" percent={60} />
         </div>
@@ -34,7 +36,6 @@ const Sidebar = () => {
       <div>
         <h2 className={styles.header}>Hobbies</h2>
         <div></div>
-        <button className={styles.button}>Football</button>
         <button className={styles.button}>Game</button>
       </div>
     </div>

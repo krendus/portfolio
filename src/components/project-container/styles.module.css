@@ -1,0 +1,28 @@
+.container {
+    width: 200px;
+    background: #7c292a1f;
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    color: #7c292a;
+    border-radius: 15px;
+    padding: 15px;
+}
+.linkContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.container a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    color: #7c292a;
+    border: 1px solid #7c292a;
+    border-radius: 99px;
+    padding: 4px 7px;
+    transition: .3s linear;
+}
+.container a:hover {
+    background: #7C292A;
+    color: white;
+}

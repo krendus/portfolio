@@ -2,3 +2,29 @@
     width: 100vw;
     max-width: 1460px;
 }
+.pdfContainer {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    min-height: 450px;
+    overflow: hidden;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.controls button {
+    background: #7C292A;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 99px;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
