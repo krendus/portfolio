@@ -98,6 +98,11 @@ const Resume = () => {
               />
             </div>
           </section>
+          <section className={styles.hobbies}>
+            <h2 className={styles.header}>HOBBIES</h2>
+            <div></div>
+            <button className={sidebarStyles.button} onClick={() => setShowModal(true)}>Chess</button>
+          </section>
           <p className={styles.copyright}>Copyright &copy; 2022</p>
         </div>
         {
