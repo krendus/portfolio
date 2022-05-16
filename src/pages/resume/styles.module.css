@@ -15,13 +15,13 @@
     color: #7c292a;
 }
 .title {
-    color: #7c292aca;
+    color: #555;
     font-size: 22px;
 }
 .title + div {
     width: 120px;
     height: 2px;
-    background: #7c292a;
+    background: #555;
     margin-bottom: 15px;
 }
 .profileImg {
@@ -104,4 +104,9 @@
     position: absolute;
     top: 20px;
     text-align: center;
+}
+@media screen and (max-width: 700px) {
+    .modal img {
+        width: 80%;
+    }
 }
