@@ -9,7 +9,7 @@ import ContactLink from '../../components/contact-link';
 import Timeline from '../../components/timeline';
 import ProjectContainer from '../../components/project-container';
 import chessGIF from '../../assets/chess.gif';
-import profileImage from '../../assets/profile.jpeg';
+import profileImage from '../../assets/profile.jpg';
 import Slider from '../../components/slider';
 const Resume = () => {
   const [showModal, setShowModal] = useState(false)

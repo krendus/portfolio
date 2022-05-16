@@ -96,6 +96,7 @@
 }
 .profileImg img {
     object-fit: cover;
+    max-width: 200px;
 }
 .header {
     font-size: 20px;

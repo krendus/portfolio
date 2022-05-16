@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import Slider from '../slider';
 import styles from './styles.module.css';
-import profileImage from '../../assets/profile.jpeg';
+import profileImage from '../../assets/profile.jpg';
 interface IProps {
   showModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
