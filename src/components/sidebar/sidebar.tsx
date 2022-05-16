@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Slider from '../slider';
 import styles from './styles.module.css';
 import profileImage from '../../assets/profile.jpeg';
+interface IProps {
+  showModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-const Sidebar = () => {
+const Sidebar:FunctionComponent<IProps> = ({showModal}) => {
   return (
     <div className={styles.container}>
       <div className={styles.profileImg}>
@@ -36,7 +39,7 @@ const Sidebar = () => {
       <div>
         <h2 className={styles.header}>Hobbies</h2>
         <div></div>
-        <button className={styles.button}>Game</button>
+        <button className={styles.button} onClick={() => showModal(true)}>Chess</button>
       </div>
     </div>
   )

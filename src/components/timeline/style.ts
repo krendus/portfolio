@@ -8,7 +8,7 @@ export const Container = styled.div`
     position: relative;
     padding-bottom: 15px;
     width: 70%;
-    min-width: 350px;
+    min-width: 300px;
     a {
         text-decoration: none;
         color: #7c292a;

@@ -1,27 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TopNav from '../../components/topnav';
 import Sidebar from '../../components/sidebar';
 import styles from './styles.module.css';
+import sidebarStyles from '../../components/sidebar/styles.module.css';
 import { BsGithub, BsTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import ContactLink from '../../components/contact-link';
 import Timeline from '../../components/timeline';
 import ProjectContainer from '../../components/project-container';
+import chessGIF from '../../assets/chess.gif';
+import profileImage from '../../assets/profile.jpeg';
+import Slider from '../../components/slider';
 const Resume = () => {
+  const [showModal, setShowModal] = useState(false)
   return (
       <main className={styles.main}>
-        <Sidebar />
+        <Sidebar showModal={setShowModal} />
         <div className={styles.rightContainer}>
           <TopNav />
           <section>
-              <h1 className={styles.name}>SAMUEL LAWAL</h1>
-              <h2 className={styles.title}>Frontend Developer</h2>
-              <div></div>
-              <div>
-                <ContactLink Icon={() => <BsGithub />} title="samurai1979" link='https://github.com/samurai1979'/>
-                <ContactLink Icon={() => <MdEmail />} title="samuellawal1979@gmail.com" link='mailto:samuellawal1979@gmail.com'/>
-                <ContactLink Icon={() => <BsTelephoneFill />} title="09038047151" link='tel:+2349038047151'/>
-              </div>
+            <div className={`${sidebarStyles.profileImg} ${styles.profileImg}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <img src={profileImage} alt="profile" />
+            </div>
+            <h1 className={styles.name}>SAMUEL LAWAL</h1>
+            <h2 className={styles.title}>Frontend Developer</h2>
+            <div></div>
+            <p className={styles.about}>I am a Tech-savvy, focused, and hard-working Developer and motivated to help organizations thrive. I can work under pressure and can communicate ideas. I have good knowledge and experience working with different technologies.</p>
+            <div>
+              <ContactLink Icon={() => <BsGithub />} title="samurai1979" link='https://github.com/samurai1979'/>
+              <ContactLink Icon={() => <MdEmail />} title="samuellawal1979@gmail.com" link='mailto:samuellawal1979@gmail.com'/>
+              <ContactLink Icon={() => <BsTelephoneFill />} title="09038047151" link='tel:+2349038047151'/>
+            </div>
+          </section>
+          <section className={styles.skills}>
+            <h2 className={styles.header}>SKILLS</h2>
+            <div></div>
+            <Slider name="JavaScript" percent={90} />
+            <Slider name="TypeScript" percent={80} />
+            <Slider name="React" percent={85} />
+            <Slider name="CSS" percent={95} />
+            <Slider name="Web3.js" percent={70} />
+            <Slider name="NodeJS" percent={50} />
+            <Slider name="Solidity" percent={60} />
           </section>
           <section>
             <h2 className={styles.header}>PROJECTS</h2>
@@ -76,6 +100,14 @@ const Resume = () => {
           </section>
           <p className={styles.copyright}>Copyright &copy; 2022</p>
         </div>
+        {
+          showModal && (
+            <div className={styles.modal} onClick={() => setShowModal(false)}>
+              <p>Click anywhere to close</p>
+              <img src={chessGIF} alt="" />
+            </div>
+          )
+        }
     </main>
   )
 }

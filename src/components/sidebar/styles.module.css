@@ -6,6 +6,11 @@
     max-height: 100vh;
     overflow-y: scroll;
 }
+@media screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+}
 .profileImg {
     height: 200px;
     width: 170px;
