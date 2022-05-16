@@ -16,7 +16,7 @@ const ProjectContainer: FunctionComponent<IProps> = ({name, liveLink, githubLink
           <a href={liveLink}>
             <BiLink />  Visit
           </a>
-          <a href={liveLink}>
+          <a href={githubLink}>
             <BsGithub />  View Code
           </a>
       </div>
