@@ -13,10 +13,10 @@ const ProjectContainer: FunctionComponent<IProps> = ({name, liveLink, githubLink
     <div className={styles.container}>
       <p>{name}</p>  
       <div className={styles.linkContainer}>
-          <a href={liveLink}>
+          <a href={liveLink} target="_blank">
             <BiLink />  Visit
           </a>
-          <a href={githubLink}>
+          <a href={githubLink} target="_blank">
             <BsGithub />  View Code
           </a>
       </div>
